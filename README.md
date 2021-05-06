@@ -1,3 +1,3 @@
-# college_gram
+# CollegeGram
 
-A new Flutter application.
+Social Media Platform for College
