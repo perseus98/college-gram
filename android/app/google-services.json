@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "362769474721",
+    "project_id": "college-gram",
+    "storage_bucket": "college-gram.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362769474721:android:d5aeb1e383453c15467ce0",
+        "android_client_info": {
+          "package_name": "com.effcon.college_gram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362769474721-1k033lbpcp1gjal8q6e3009rbjcka8a3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.effcon.college_gram",
+            "certificate_hash": "3abf80c3bd6ed841a21c26ff7f7b0c5a982fa35b"
+          }
+        },
+        {
+          "client_id": "362769474721-bgi2s9t8dljietf0d0ti757pig5l448r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCERy0u1WZJVb8VUwv8OUCcnSU4kQypPfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362769474721-bgi2s9t8dljietf0d0ti757pig5l448r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
