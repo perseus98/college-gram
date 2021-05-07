@@ -12,10 +12,13 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final pageController = PageController(
-    initialPage: 1,
-  );
-  int currentPage = 1;
+  int currentPage = 2;
+  PageController pageController;
+  @override
+  void initState() {
+    pageController = PageController(initialPage: currentPage);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,12 +49,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.dashboard_outlined),
-            label: "Upload Post",
+            label: "Feed",
             activeIcon: Icon(Icons.dashboard),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline_outlined),
-            label: "Upload Post",
+            label: "Profile",
             activeIcon: Icon(Icons.person),
           ),
         ],

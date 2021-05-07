@@ -5,10 +5,11 @@ class MyCustomErrorWidget extends StatelessWidget {
   MyCustomErrorWidget(this.errObj);
   @override
   Widget build(BuildContext context) {
-    print(errObj);
-    return Container(
-      alignment: Alignment.center,
-      child: Text("Error : $errObj"),
+    return Scaffold(
+      body: Container(
+        alignment: Alignment.center,
+        child: Text("Error : $errObj"),
+      ),
     );
   }
 }

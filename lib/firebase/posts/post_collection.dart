@@ -15,8 +15,12 @@ class PostCollection {
     return postsReference
         .doc(post.id)
         .set(post.toMap())
-        .then((value) => print("User Data saved to firestore"))
+        .then((value) => print("Post saved to firestore"))
         .catchError(
-            (error) => print("Failed save user data to firestore: $error"));
+            (error) => print("Failed to save new post to firestore: $error"));
+  }
+
+  Stream<QuerySnapshot> getProfilePost(String id) {
+    return postsReference.where("owner", isEqualTo: id).snapshots();
   }
 }

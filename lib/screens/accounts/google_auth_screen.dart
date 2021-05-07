@@ -42,7 +42,22 @@ class _GoogleAuthScreenState extends State<GoogleAuthScreen> {
         future: signInWithGoogle(),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
-            return MyCustomErrorWidget(snapshot.error);
+            return Scaffold(
+              body: Container(
+                alignment: Alignment.center,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text("${snapshot.error}"),
+                    ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/auth');
+                        },
+                        child: Text("Retry")),
+                  ],
+                ),
+              ),
+            );
           }
           if (ConnectionState.done == snapshot.connectionState) {
             print(snapshot.data.user);
